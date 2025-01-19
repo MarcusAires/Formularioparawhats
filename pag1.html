@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <img src="asset1logo.jpg" alt="logotipo da empresa">
+    <meta charset="UTF-8" />
+    <title>Formulário WhatsApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Gostaria de desenvolver sua Presença Online?</h1>
+    <p>
+      Estou ajudando empresas e empreendedores a expandirem sua presença digital com sites
+      profissionais e personalizados. <br />
+      Preencha este formulário e entrarei em contato com você para apresentar uma solução sob medida
+      para o seu negócio!
+    </p>
+    <form>
+      <fieldset>
+        <legend>Identificação</legend>
+        <label for="first-name">Primeiro nome:
+          <input id="first-name" name="first-name" type="text" required />
+        </label>
+        <label for="last-name">Último nome:
+          <input id="last-name" name="last-name" type="text" required />
+        </label>
+        <label for="email">E-mail:
+          <input id="email" name="email" type="email" required />
+        </label>
+        <label for="phone">Telefone (DDD + 9 + número):
+          <input id="phone" name="phone" type="tel" required />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Desenvolvendo Presença Online</legend>
+        <label for="tipodesite">Que tipo de site faz sentido para você?
+          <select id="tipodesite" name="tipodesite">
+            <option value="">Escolha um</option>
+            <option value="Institucional">Criar um site institucional que apresente minha empresa</option>
+            <option value="E-commerce">Criar uma loja virtual (e-commerce)</option>
+            <option value="Portfólio">Criar um portfólio online</option>
+            <option value="Blog">Criar um blog ou site de notícias</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </label>
+        <p>Já possui um site?</p>
+        <label>
+          <input type="radio" name="temsite" value="Sim"  class="inline" checked /> Sim
+        </label>
+        <label>
+          <input type="radio" name="temsite" value="Não" class="inline" /> Não
+        </label>
+        <label for="site">Se sim, qual o link do site?
+          <input id="site" type="url" name="site" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Informações Extras</legend>
+        <p>Você gostaria de um orçamento sem compromisso?</p>
+        <label>
+          <input type="radio" name="orçamento" value="Sim" class="inline" checked /> Sim
+        </label>
+        <label>
+          <input type="radio" name="orçamento" value="Não" class="inline" /> Não
+        </label>
+        <p>Gostaria de receber dicas sobre presença online de forma gratuita?</p>
+        <label>
+          <input type="radio" name="dicas" value="Sim" class="inline" checked /> Sim
+        </label>
+        <label>
+          <input type="radio" name="dicas" value="Não" class="inline" /> Não
+        </label>
+      </fieldset>
+      <input class="primary-button" type="submit" onclick="sendwhatsapp()" value="Enviar para o WhatsApp" />
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
